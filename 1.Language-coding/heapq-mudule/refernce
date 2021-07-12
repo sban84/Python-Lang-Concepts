@@ -1,0 +1,29 @@
+https://stackoverflow.com/questions/8875706/heapq-with-custom-compare-predicate
+
+According to the heapq documentation, the way to customize the heap order is to have each element on the heap to be a tuple, with the first tuple element being one that accepts normal Python comparisons.
+
+The functions in the heapq module are a bit cumbersome (since they are not object-oriented), and always require our heap object (a heapified list) to be explicitly passed as the first parameter. We can kill two birds with one stone by creating a very simple wrapper class that will allow us to specify a key function, and present the heap as an object.
+
+The class below keeps an internal list, where each element is a tuple, the first member of which is a key, calculated at element insertion time using the key parameter, passed at Heap instantiation:
+
+# -*- coding: utf-8 -*-
+import heapq
+
+class MyHeap(object):
+   def __init__(self, initial=None, key=lambda x:x):
+       self.key = key
+       self.index = 0
+       if initial:
+           self._data = [(key(item), i, item) for i, item in enumerate(initial)]
+           self.index = len(self._data)
+           heapq.heapify(self._data)
+       else:
+           self._data = []
+
+   def push(self, item):
+       heapq.heappush(self._data, (self.key(item), self.index, item))
+       self.index += 1
+
+   def pop(self):
+       return heapq.heappop(self._data)[2]
+(The extra self.index part is to avoid clashes when the evaluated key value is a draw and the stored value is not directly comparable - otherwise heapq could fail with TypeError)

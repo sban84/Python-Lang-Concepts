@@ -1,0 +1,8 @@
+Tar = Rat
+Arc = Car
+Elbow = below
+State = Taste
+Cider = Cried
+Dusty = Study
+Night = Thing
+Inch = Chin

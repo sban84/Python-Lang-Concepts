@@ -1,0 +1,13 @@
+https://www.programiz.com/python-programming/generator
+
+The difference is that while a return statement terminates a function entirely, yield statement pauses the function
+saving all its states and later continues from there on successive calls.
+
+
+Unlike normal functions, the local variables are not destroyed when the function yields. Furthermore, the generator object can be iterated only once.
+
+To restart the process we need to create another generator object using something
+like itr_obj = my_gen().
+
+
+https://wiki.python.org/moin/Generators

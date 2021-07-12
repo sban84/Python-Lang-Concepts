@@ -1,0 +1,3 @@
+The simplest way to produce output is using the print statement where you can pass zero or
+more expressions separated by commas. This function converts the expressions you pass into a
+string and writes the result to standard output as follows
