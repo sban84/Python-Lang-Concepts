@@ -16,7 +16,7 @@ persons = [
 for i in persons:
     print(f"fname {i['fname']} and age {i['age']}")
 
-# 1. get nlargest and nsmallest age by using heapq module ( very helpful to implememt DS like Heap)
+# 1. get nlargest and nsmallest age by using heapq module ( very helpful to implement DS like Heap)
 
 olderst_emp = heapq.nlargest(2,persons,key=lambda kv: kv["age"])
 print(olderst_emp)
@@ -24,7 +24,7 @@ print(olderst_emp)
 
 # same as above by using sorted
 
-sorted_per = sorted(persons , key=lambda x:x["age"] , reverse=True)
+sorted_per = sorted(persons , key=lambda x:x["age"] , reverse=True) #sorting list by key func
 print(sorted_per)
 
 # take first 2
