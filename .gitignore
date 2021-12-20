@@ -46,6 +46,7 @@ geckodriver.log
 # jetbrains IDE stuff
 *.iml
 .idea/
+*.log
 
 # ms IDE stuff
 *.code-workspace

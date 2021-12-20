@@ -39,3 +39,5 @@ def print_char_type(s: str):
 print_char_type("Hello 2#/a")
 
 
+
+

@@ -1,0 +1,1 @@
+from Modules_and_Packages.my_package.module_inside_package import hi

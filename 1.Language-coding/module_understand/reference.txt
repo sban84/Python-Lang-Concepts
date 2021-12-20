@@ -1,3 +1,8 @@
+export PYTHONPATH=${PYTHONPATH}/1.Language-coding/module_understand/
+python using_util.py
+echo $PYTHONPATH
+
+
 https://stackoverflow.com/questions/419163/what-does-if-name-main-do
 https://www.digitalocean.com/community/tutorials/how-to-write-modules-in-python-3
 

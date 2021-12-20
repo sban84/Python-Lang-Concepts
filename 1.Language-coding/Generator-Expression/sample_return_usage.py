@@ -13,7 +13,7 @@ print("\n")
 for i in result:
     print(i , end=",")
 
-
+print("\n test on yield_list_num")
 def yield_list_num():
     print("Inside yield_list_num first yield")
     yield 1  # pause and will resume for next call from here saving internal state of the func
@@ -25,6 +25,7 @@ result = yield_list_num()
 for i in result:
     print("inside loop")
     print(i , end=",")
+    print("\n")
 
 # below code will not be executed as iterator is exhausted
 for i in result:

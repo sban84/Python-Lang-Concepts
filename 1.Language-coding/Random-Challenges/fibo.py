@@ -24,3 +24,17 @@ def fib2(n):  # return Fibonacci series up to n
 #     fib2(sys.argv[0])
 
 
+# 3. using recursion
+
+
+def fibo(a, b, n):
+    #print(a,b,n)
+    if n <= 1:
+        return 1
+    else:
+        print(a , sep=",")
+        a, b = b, a + b
+        return fibo(a,b, n - 1)
+
+
+fibo(0, 1, 10)

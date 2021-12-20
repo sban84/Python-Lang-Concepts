@@ -1,4 +1,3 @@
-
 class Dog:
     species = "Canis familiaris"
 
@@ -12,18 +11,24 @@ class Dog:
     def speak(self, sound):
         return f"{self.name} says {sound}"
 
+    def leg(self):
+        print("Dogs has 4 legs")
+
 
 class Bulldog(Dog):
     # nothing override
     pass
 
+
 """One thing to keep in mind about class inheritance is that changes to the parent class
 automatically propagate to child classes. This occurs as long as the attribute or
 method being changed isn’t overridden in the child class."""
+
+
 class JackRussellTerrier(Dog):
 
     # override super class speak def
-    def speak(self, sound="woof"):
+    def speak(self, sound="woof"):  # default value in arg
         return f"{self.name} says {sound}"
 
     # this is new def available to subclass only, no relation with super class.
@@ -31,9 +36,10 @@ class JackRussellTerrier(Dog):
         return "JackRussellTerrier Price"
 
 
-jack = JackRussellTerrier("JackRussellTerrier" , 12)
+jack = JackRussellTerrier("JackRussellTerrier", 12)
 print(jack.speak())
 print(jack.price())
+print(jack.leg())
 
-bulldog =  Bulldog("Bulldog" , 10)
+bulldog = Bulldog("Bulldog", 10)
 print(bulldog.speak("Hi"))

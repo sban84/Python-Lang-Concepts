@@ -1,4 +1,7 @@
+import pandas as pd
 
+result  = pd.read_csv("./words.txt")
+print(result)
 
 """File Handling in Python """
 

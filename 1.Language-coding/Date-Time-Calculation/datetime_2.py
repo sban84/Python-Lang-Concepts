@@ -1,6 +1,11 @@
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
+dict = {
+    10: "Oct",
+    11: "Nov",
+}
+
 d1 = datetime(2019, 1, 28, 10, 12, 00)
 d2 = datetime.now()
 print(f" d1 = {d1.month} and d2 = {d2.month}")
@@ -10,6 +15,7 @@ print(f"only days diff {(d2 - d1).days}")  # best way to get days diff
 # 2.
 exact_diff = relativedelta(d2, d1)
 print(f"exact_diff = {exact_diff}")
+print(f"month name", dict.get(d2.month,"default"))
 
 # 3.
 months_diff = exact_diff.months + (12 * exact_diff.years)
@@ -77,5 +83,4 @@ week_map = {
     "7": "Saturday"}
 
 date = datetime.strptime("08 05 2015", "%d %m %Y")
-print(week_map.get(str(date.weekday())  ) )
-
+print(week_map.get(str(date.weekday())))

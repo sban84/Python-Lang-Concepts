@@ -36,7 +36,7 @@ print(r)
 print("time taken function call 1 times ", time.time() - start)
 
 # 3.
-
+start = time.time()
 temp_list = [f(i) for i in range(0, 10)]
 
 r = [i for i in temp_list if i > 10]

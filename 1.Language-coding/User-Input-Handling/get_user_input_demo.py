@@ -11,7 +11,7 @@ while toBreak != True:
         inp = input("Enter a number between 1 to 10 ( type quit to exit )")
     # if 1 <= int(inp) <= 10:
     try:
-        if 1 <= int(inp) & int(inp) <= 10:
+        if 1 <= int(inp) <= 10:
             print("You have entered ", inp)
             print("counter", counter)
         else:
@@ -21,4 +21,3 @@ while toBreak != True:
     except ValueError as e:
         counter += 1
         print(f"counter {counter} and ValueError exception occurred {e}")
-

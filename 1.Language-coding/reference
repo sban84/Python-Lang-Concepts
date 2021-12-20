@@ -1,0 +1,25 @@
+Python path add:-
+
+https://stackoverflow.com/questions/17198319/how-to-configure-custom-pythonpath-with-vm-and-pycharm
+
+
+Python tutorial playlist: https://www.youtube.com/playlist?list=PLeo1K3hjS3uv5U-Lmlnucd7gqF-3ehIh0
+Datastructures in python playlist: https://www.youtube.com/playlist?list...
+Coding best practices: https://github.com/codebasics/py/blob...
+Debugging skills: https://www.youtube.com/playlist?list...
+Code organization: https://realpython.com/python-applica...
+how to get projects when you don't have a job: https://www.youtube.com/watch?v=9fqu2...
+
+############ Pycharm Short -cuts ############
+
+ctrl + option + o for organize imports
+shift + command + f -> search files / texts in the whole project
+shift + command + o -> open class / file etc
+shift + command + u -> toggle string case
+
+option + command + arrow -> go back and forward between files
+
+ctrl + r -> find and replace in the file
+Fn + command + F12 -> see all the functions names in the file/class
+
+

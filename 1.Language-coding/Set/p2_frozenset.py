@@ -1,5 +1,7 @@
 from frozendict import frozendict
 
+
+
 vowels = frozenset({"a", "e", "i", "o", "u"})
 # no add / pop api
 

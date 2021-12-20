@@ -8,9 +8,12 @@ Now, let's look at a working example for both types of Higher Order Functions.""
 
 def double(x):
     return x * 2
+
+
 # 0. Function can be assigned to variables
-d =  double
+d = double
 print(d(12))
+
 
 def square(x):
     return x ** 2
@@ -18,6 +21,7 @@ def square(x):
 
 def tripple(x):
     return x * 3
+
 
 # 1.
 # Passing Function as an argument to other function
@@ -34,22 +38,25 @@ print(result)
 result = applyF(tripple, 2)
 print(result)
 
+
 # 2.
 
 # Returning function
-# As functions are objects, we can also return a function from another function. In the below example, the create_adder function returns adder function.
+# As functions are objects, we can also return a function from another function.
+# In the below example, the create_adder function returns adder function.
 #
 
 def applyF(x):
+    print(f"inside applyF with argument {x}")
+
     def minus_y(y):
+        print(f"inside minus_y with argument {y}")
         return x - y
-    return minus_y
+
+    return minus_y # NOTE : Very Important Recall that this means that you are returning a reference to the function
+# In contrast minus_y(y) with parentheses refers to the result of evaluating the function
 
 min_12 = applyF(12)
 print(min_12)
 
 print(min_12(10))
-
-
-
-

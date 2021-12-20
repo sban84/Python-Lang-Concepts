@@ -1,5 +1,6 @@
 
 # practical usage in case of adding new items in map.
+# also refer p5_counter_usage
 import sorting_dict
 
 def word_count():

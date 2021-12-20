@@ -12,7 +12,7 @@ known_format_list = ["%Y/%m/%d", "%d-%m-%Y", "%Y%m%d"]
 def convert_str_to_date(str):
     for frmt in known_format_list:
         try:
-            date_frm = datetime.strptime(str, frmt).date()
+            date_frm = datetime.strptime(str, frmt)
             print(date_frm)
             return date_frm
 
@@ -79,7 +79,7 @@ def all_dates_between(start, end):
         print("aaaaa" ,start_date < end_date)
         next_date = start_date + relativedelta(days=1)
         print(f"dates {next_date}")
-        start_date = next_date
+        start_date = start_date + relativedelta(days=1)
 
 
 

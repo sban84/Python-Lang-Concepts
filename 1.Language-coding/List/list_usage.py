@@ -8,7 +8,8 @@ for i in l:
 
 # iterate using enumerate , can be used for any iterable collections
 print("<----iterate using enumerate--->")
-for i,idx in enumerate(l):
+l  = [10,1,12,13,14]
+for idx,i in enumerate(l):
     print(f"item {i} is at index {idx}")
 
 

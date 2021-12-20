@@ -21,3 +21,5 @@ print(f"After flattening a nested list {flatten_list(l)}")
 # this is for one level so better use above approach can be for any level .
 # r = [item for sublist in l for item in sublist]
 # print(r)
+
+
