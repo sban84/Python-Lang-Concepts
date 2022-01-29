@@ -16,10 +16,20 @@ ctrl + option + o for organize imports
 shift + command + f -> search files / texts in the whole project
 shift + command + o -> open class / file etc
 shift + command + u -> toggle string case
+shift + command + up/down arrow -> move lines(codes) up/down
 
-option + command + arrow -> go back and forward between files
+option + command + fwd/back arrow -> go back and forward between files
 
 ctrl + r -> find and replace in the file
 Fn + command + F12 -> see all the functions names in the file/class
 
+
+## Virtual env in Python based application:-
+
+python3 -m venv /path/to/new/virtual/environment
+source /path/to/new/virtual/environment/bin/activate
+pip3 freeze > requirements.txt ( check pipreqs )
+deactivate
+
+pip3 install -r requirements.txt  # Pip install to requirements.txt
 

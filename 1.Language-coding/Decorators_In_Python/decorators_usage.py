@@ -1,6 +1,9 @@
 """
 also check fibonacci_using_yield.py
 """
+# @ with function A name implies that we will pass the below function B as an argument to A.
+# which will add some extra features on B.
+# e.g. A= my_decorator , B = say_whee here...
 
 
 def my_decorator(func):
@@ -12,9 +15,6 @@ def my_decorator(func):
     return wrapper
 
 
-# @ with function A name implies that we will pass the below function B as an argument to A.
-# which will add some extra features on B.
-# e.g. A= my_decorator , B = say_whee here...
 @my_decorator
 def say_whee():
     print("Whee!")
@@ -24,6 +24,7 @@ say_whee()
 
 
 # without using decorator the same thing will be like this.
+print("\n*** without using decorator*** ")
 def say_whee_1():
     print("Whee_1!")
 

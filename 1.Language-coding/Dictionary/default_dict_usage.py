@@ -11,7 +11,7 @@ normal_dict = {}
 
 for i in source:
     print(i[0], i[1])
-    # default_dict.update({default_dict.get(i[0]), default_dict.get(i[0]) + i[1]}) # don't know hwy its dod not work??
+    # default_dict.update({default_dict.get(i[0]), default_dict.get(i[0]) + i[1]}) # don't know hwy its did not work??
     default_dict[i[0]] += i[1]
     normal_dict.update({i[0]: normal_dict.get(i[0],0) + i[1]})
 

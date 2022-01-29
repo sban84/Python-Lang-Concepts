@@ -1,5 +1,5 @@
 """
-This is a very good exmaple to understand how to impl __eq__ and __hash__()
+This is a very good example to understand how to impl __eq__ and __hash__()
 for user custom objects in Python..Very important code .
 
 

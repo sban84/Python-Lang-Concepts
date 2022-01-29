@@ -39,6 +39,8 @@ print(isinstance(12.0, float))
 
 # 4.  For Primitives values, python optimizing memory locations for same values,
 # same as Strings , this concept is called String pool / primitives pool
+
+
 print("\nSpecial primitives values")
 a = 10
 b = 10
@@ -58,3 +60,6 @@ print(s1 is s2)
 print(id(s1), id(s2))
 print(id(s1) == id(s2))
 
+# NOTE: The Equality operator (==) compares the values of both the operands and checks
+# for value equality. Whereas the 'is' operator checks whether both the operands
+# refer to the same object or not (present in the same memory location).

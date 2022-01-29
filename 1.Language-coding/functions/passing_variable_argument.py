@@ -2,9 +2,13 @@
 def func(*args):
     """
 
-    :param a: pass any number of items
+    :param args: pass any number of items
     :return: sum of them
     """
+    print(type(args))
+    # print(args[0]) # keep in mind that for positional based access the item need to be passed else error
+    for i in args:
+        print(i)
     return sum(args)
 
 
@@ -39,8 +43,8 @@ func(**{"a": 1, "b": 2})  # remember one , this ** at the beginning is must
 # ** means keywords arguments
 # that's it.
 def func(arg1, arg2=10, *args, kwarg1, kwarg2=2, **kwargs, ):
-    print(f"arg1 {arg1}"
-          f"arg2 {arg2}, *args {args}, kwarg1 {kwarg1} , kwarg2= {kwarg2}"
+    print(f"arg1= {arg1}"
+          f"arg2= {arg2}, *args= {args}, kwarg1= {kwarg1} , kwarg2= {kwarg2}"
           f"kwargs= {kwargs}")
 
 
@@ -49,4 +53,4 @@ func(1, 2, kwarg1={"a": 10})  # OKAY , as variable args are optional
 func(1, 2, 3, 4, 5, kwarg1={"a": 10, "b": 300}, **{"b": 200})  # valid
 func(1, 2, 3, 4, 5, kwarg1=2, kwargs=1)  # valid
 
-#func(1, 2, 3, 4, 5,  **{"b": 200}) # invalid as required keyword-only argument: 'kwarg1'
+# func(1, 2, 3, 4, 5,  **{"b": 200}) # invalid as required keyword-only argument: 'kwarg1'
