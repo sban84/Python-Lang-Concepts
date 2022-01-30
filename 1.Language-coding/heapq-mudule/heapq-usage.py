@@ -13,6 +13,7 @@ persons = [
 
 for i in persons:
     print(f"fname {i['fname']} and age {i['age']}")
+    print(f"name={i.get('fname')}")
 
 # 1. get nlargest and nsmallest age by using heapq module ( very helpful to implement DS like Heap)
 
@@ -26,6 +27,8 @@ print(sorted_per)
 
 # take first 2
 print(sorted_per[:2:])
+
+
 
 # 2. Another usage is Heap DS ( min heap )
 

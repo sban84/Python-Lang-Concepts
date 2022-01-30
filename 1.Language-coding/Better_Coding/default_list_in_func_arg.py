@@ -12,4 +12,20 @@ def func(names, combined_list=[]):
 
 print(func(["a", "b", "c"]))
 print(func(["a", "b", "c"]))  # as combined_list=[] will be initialized
+
 # only once when the func gets loaded first time call. #o/p ['a', 'b', 'c', 'a', 'b', 'c']
+
+
+# correct way
+print("Correct way ")
+
+
+def func1(names: list):
+    combined_list = []
+    for n in names:
+        combined_list.append(n)
+    return combined_list
+
+
+print(func1(["a", "b", "c"]))
+print(func1(["a", "b", "c"]))

@@ -30,5 +30,6 @@ max_heap.heappush(1)
 print("after pushing items into Max Heap ", max_heap.heap_list)
 
 print(max_heap.heappop())
+print("after popping one items from Max Heap ", max_heap.heap_list)
 print(max_heap.heappop())
 
